@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Links - Necoti</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #4a0e4e, #0a4a94);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .links-section {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .links-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .link-card {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+        }
+
+        .link-card:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+        }
+
+        .link-card i {
+            font-size: 24px;
+            margin-right: 15px;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-link a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .back-link a:hover {
+            color: #ffffff;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .container {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>My Links</h1>
+        
+        <div class="links-section">
+            <h2>Personal Links</h2>
+            <a href="https://www.instagram.com/your-instagram" class="link-card">
+                <i class="fab fa-instagram"></i>
+                Instagram
+            </a>
+            <a href="https://discord.gg/your-discord" class="link-card">
+                <i class="fab fa-discord"></i>
+                Discord
+            </a>
+            <a href="mailto:your-email@example.com" class="link-card">
+                <i class="fas fa-envelope"></i>
+                Email
+            </a>
+            <a href="https://www.linkedin.com/in/your-linkedin" class="link-card">
+                <i class="fab fa-linkedin"></i>
+                LinkedIn
+            </a>
+            <a href="https://twitter.com/your-twitter" class="link-card">
+                <i class="fab fa-twitter"></i>
+                Twitter (X)
+            </a>
+        </div>
+
+        <div class="links-section">
+            <h2>Horseshoe Studios</h2>
+            <a href="https://www.instagram.com/your-team-instagram" class="link-card">
+                <i class="fab fa-instagram"></i>
+                Horseshoe Studios Instagram
+            </a>
+            <a href="https://www.youtube.com/your-team-youtube" class="link-card">
+                <i class="fab fa-youtube"></i>
+                Horseshoe Studios YouTube
+            </a>
+            <a href="https://horseshoe.site" class="link-card">
+                <i class="fas fa-globe"></i>
+                Horseshoe Studios Website
+            </a>
+        </div>
+    </div>
+</body>
+</html>
